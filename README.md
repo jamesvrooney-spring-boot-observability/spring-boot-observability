@@ -19,6 +19,8 @@ This demo project is a Spring Boot version of [FastAPI with Observability](https
 - [EASIEST way to Integrate Spring Boot with Prometheus, and add custom Metrics and Labels](https://www.youtube.com/watch?v=Mcv3QzwF298)
   - [Spring Boot | Prometheus](https://github.com/ssudershan/springbootprometheus)
 - [Getting started with logging and Grafana Loki](https://grafana.com/go/webinar/getting-started-with-logging-and-grafana-loki)
+- [Cloud Observability With Grafana And Spring Boot | Blog](https://blog.qaware.de/posts/cloud-observability-grafana-spring-boot)
+  - [Cloud Observability with Grafana and Spring Boot | GitHub](https://github.com/qaware/cloud-observability-grafana-spring-boot)
 
 ## Table of contents
 
