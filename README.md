@@ -11,11 +11,11 @@ Observe the Spring Boot application with three pillars of observability on [Graf
 This demo project is a Spring Boot version of [FastAPI with Observability](https://github.com/blueswen/fastapi-observability) and is also inspired by [Cloud Observability with Grafana and Spring Boot](https://github.com/qaware/cloud-observability-grafana-spring-boot).
 
 ## Other Useful Resources
-- [Spring Boot 3 - What’s new in Spring Framework 6 and Spring Boot 3.0](https://www.youtube.com/watch?v=TR254zh-f3c)
+- [Spring Boot 3 - What’s new in Spring Framework 6 and Spring Boot 3.0 (YouTube)](https://www.youtube.com/watch?v=TR254zh-f3c)
 - [Spring Boot Microservices | Monitoring using Prometheus & Grafana](https://www.youtube.com/watch?v=5X3vKgwqolQ)
-- [Observability with Spring Boot 3 (blog)](https://spring.io/blog/2022/10/12/observability-with-spring-boot-3)
+- [Observability with Spring Boot 3 (Official Spring blog)](https://spring.io/blog/2022/10/12/observability-with-spring-boot-3)
   - [Spring Observability Support in Spring Boot (GitHub)](https://github.com/marcingrzejszczak/observability-boot-blog-post)
-- [What Is Observability?](https://www.youtube.com/watch?v=-fCOxnu6FYA)
+- [What Is Observability? (YouTube)](https://www.youtube.com/watch?v=-fCOxnu6FYA)
 - [EASIEST way to Integrate Spring Boot with Prometheus, and add custom Metrics and Labels](https://www.youtube.com/watch?v=Mcv3QzwF298)
   - [Spring Boot | Prometheus](https://github.com/ssudershan/springbootprometheus)
 - [Getting started with logging and Grafana Loki](https://grafana.com/go/webinar/getting-started-with-logging-and-grafana-loki)
