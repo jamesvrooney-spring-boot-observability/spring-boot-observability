@@ -22,6 +22,10 @@ This demo project is a Spring Boot version of [FastAPI with Observability](https
 - [Cloud Observability With Grafana And Spring Boot | Blog](https://blog.qaware.de/posts/cloud-observability-grafana-spring-boot)
   - [Cloud Observability with Grafana and Spring Boot | GitHub](https://github.com/qaware/cloud-observability-grafana-spring-boot)
 
+### Prometeus/Granfana Setup (YouTube)
+- [Setup Prometheus & Grafana Monitoring On Kubernetes Using Helm](https://www.youtube.com/watch?v=dk2-_DbWb80)
+- [Setup Prometheus Monitoring on Kubernetes using Helm and Prometheus Operator | Part 1](https://www.youtube.com/watch?v=QoDqxm7ybLc)
+
 ## Table of contents
 
 - [Spring Boot with Observability](#spring-boot-with-observability)
