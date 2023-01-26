@@ -17,13 +17,13 @@ import java.util.Random;
 public class DemoController {
 
     @GetMapping("/")
-    public String root(@RequestParam(value = "name", defaultValue = "World") String name, @RequestHeader HttpHeaders headers) {
-        log.error(headers.toString());
+    public String root(@RequestParam(value = "name", defaultValue = "World") String name) {
         log.error(String.format("Hello %s!!", name));
         log.debug("Debugging log");
         log.info("Info log");
         log.warn("Hey, This is a warning!");
         log.error("Oops! We have an Error. OK");
+
         return String.format("Hello %s!!", name);
     }
 
@@ -31,6 +31,7 @@ public class DemoController {
     public String io_task(@RequestParam(value = "name", defaultValue = "World") String name) throws InterruptedException {
         Thread.sleep(1000);
         log.info("io_task");
+
         return "io_task";
     }
 
@@ -60,20 +61,20 @@ public class DemoController {
         return "random_status";
     }
 
-    @GetMapping("/chain")
-    public String chain(@RequestParam(value = "name", defaultValue = "World") String name) throws InterruptedException, IOException {
-        String TARGET_ONE_HOST = System.getenv().getOrDefault("TARGET_ONE_HOST", "localhost");
-        String TARGET_TWO_HOST = System.getenv().getOrDefault("TARGET_TWO_HOST", "localhost");
-        log.debug("chain is starting");
-        Request.Get("http://localhost:8080/")
-                .execute().returnContent();
-        Request.Get(String.format("http://%s:8080/io_task", TARGET_ONE_HOST))
-                .execute().returnContent();
-        Request.Get(String.format("http://%s:8080/cpu_task", TARGET_TWO_HOST))
-                .execute().returnContent();
-        log.debug("chain is finished");
-        return "chain";
-    }
+//    @GetMapping("/chain")
+//    public String chain(@RequestParam(value = "name", defaultValue = "World") String name) throws InterruptedException, IOException {
+//        String TARGET_ONE_HOST = System.getenv().getOrDefault("TARGET_ONE_HOST", "localhost");
+//        String TARGET_TWO_HOST = System.getenv().getOrDefault("TARGET_TWO_HOST", "localhost");
+//        log.debug("chain is starting");
+//        Request.Get("http://localhost:8080/")
+//                .execute().returnContent();
+//        Request.Get(String.format("http://%s:8080/io_task", TARGET_ONE_HOST))
+//                .execute().returnContent();
+//        Request.Get(String.format("http://%s:8080/cpu_task", TARGET_TWO_HOST))
+//                .execute().returnContent();
+//        log.debug("chain is finished");
+//        return "chain";
+//    }
 
     @GetMapping("/error_test")
     public String error_test(@RequestParam(value = "name", defaultValue = "World") String name) throws Exception {
